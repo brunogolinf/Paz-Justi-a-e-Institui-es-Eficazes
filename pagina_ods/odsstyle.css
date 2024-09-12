@@ -1,3 +1,5 @@
+/*Começo Padrão para Todos */
+
 * {
     margin: 0;
     padding: 0;
@@ -5,9 +7,9 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
+    font-family: 'Verdana', sans-serif;
+    background-color: #fafafa;
+    color: #444;
     line-height: 1.6;
 }
 
@@ -48,11 +50,30 @@ nav ul li a:hover {
     background-color: #004a7c;
     color: white;
     text-align: center;
+    padding: 2rem 0;
 }
 
 .intro h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
+
+footer {
+    background-color: #004a7c;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/*Fim Padrão para Todos */
 
 .motivacoes, .news {
     padding: 2rem;
@@ -134,28 +155,12 @@ nav ul li a:hover {
     background-color: #e0e0e0;
     padding: 1rem;
     width: 300px; /* Largura fixa para manter formato quadrado */
-    height: 300px; /* Altura fixa para manter formato quadrado */
+    height: 400px; /* Altura fixa para manter formato quadrado */
     display: flex;
     align-items: center;
-    justify-content: center;
     border: 2px solid #666; /* Borda das caixas */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombras suaves nas caixas */
     overflow: hidden;
 }
 
 
-footer {
-    background-color: #004a7c;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
