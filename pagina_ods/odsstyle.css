@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #004a7c;
+    padding: 1rem;
+    color: white;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: 75px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.intro {
+    background-color: #004a7c;
+    color: white;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+}
+
+.motivacoes, .news {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.motivacoes h2, .news h2{
+    color: #004a7c;
+    margin-bottom: 1rem;
+}
+
+.motivacoes {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.motivacoes h2 {
+    color: #004a7c;
+    margin-bottom: 1rem;
+    text-align: center; /* Centraliza o título */
+}
+
+.motivacoes-content {
+    display: flex;
+    
+    align-items: center; /* Alinhamento vertical */
+}
+
+.texto-motivacoes {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+.texto-motivacoes ul {
+ 
+    width: 300px; /* Define a largura fixa */
+    height: 300px; /* Define a altura fixa */
+    justify-content: center;
+    text-align: left;
+    
+}
+
+.texto-motivacoes ul li {
+    margin-bottom: 1rem; /* Espaçamento entre os itens da lista */
+}
+
+.imagem-motivacoes {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.imagem-motivacoes img {
+    max-width: 100%;
+    height: auto;
+}
+
+.news {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    flex-wrap: wrap;
+    gap: 2rem; /* Espaçamento entre as caixas */
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza o conjunto de notícias */
+    text-align: center;
+}
+
+.news h2 {
+    flex-basis: 100%; /* Garante que o título ocupe toda a largura */
+    margin-bottom: 2rem; /* Espaço entre o título e as caixas */
+    color: #004a7c;
+    text-align: center; /* Centraliza o texto do título */
+}
+
+.news article {
+    background-color: #e0e0e0;
+    padding: 1rem;
+    width: 300px; /* Largura fixa para manter formato quadrado */
+    height: 300px; /* Altura fixa para manter formato quadrado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #666; /* Borda das caixas */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombras suaves nas caixas */
+    overflow: hidden;
+}
+
+
+footer {
+    background-color: #004a7c;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

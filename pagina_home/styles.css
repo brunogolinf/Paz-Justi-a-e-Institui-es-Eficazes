@@ -69,18 +69,6 @@ nav ul li a:hover {
     text-align: center;
 }
 
-.ods-images {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.ods-images img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-}
-
 .news article {
     background-color: #e0e0e0;
     padding: 1rem;
@@ -115,4 +103,10 @@ button{
     background-color: #004a7c;
     color: white;
     font-weight: bold;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
 }
