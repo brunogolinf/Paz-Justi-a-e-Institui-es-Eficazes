@@ -92,53 +92,26 @@ footer a:hover {
 
 /*Fim Padrão para Todos */
 
-/* Estilos para as seções de visão geral e metas: define espaçamento, largura máxima e centralização */
-.overview, .goals {
-    padding: 2rem;
+/* Estilos para a seção de visão geral: define largura máxima e centralização */
+.overview {
+    
     max-width: 1000px;
     margin: auto;
 }
 
-/* Estilos para os cabeçalhos (h2) nas seções de visão geral e metas: define cor azul escura e espaçamento inferior */
-.overview h2, .goals h2 {
+/* Estilos para os cabeçalhos (h2) na seção de visão geral: define cor azul escura e ajusta espaçamento superior e inferior */
+.overview h2 {
     color: #004a7c;
-    margin-bottom: 1rem;
+    margin-top: 1rem; /* Diminui o espaço acima dos títulos */
+    margin-bottom: 1rem /* Diminui o espaço abaixo dos títulos */
 }
 
-
-/* Estilos para listas na seção de metas: define estilo de marcador e margem à esquerda */
-.goals ul {
-    list-style: square;
-    margin-left: 2rem;
+/* Estilos para artigos: define margem inferior para espaçamento entre artigos */
+article {
+    margin-bottom: 1rem; /* Reduz o espaço entre o artigo e o próximo título */
 }
 
-/* Estilos para os itens da lista na seção de metas: define espaçamento inferior */
-.goals ul li {
-    margin-bottom: 0.75rem;
-}
-
-
-/* Estilos para números em destaque: define texto em negrito */
-.num{
-    font-weight: bold;
-}
-
-/* Estilos para artigos na seção de informações: define fundo cinza, espaçamento interno e margem inferior */
-.information article{
-    background-color: #e0e0e0;
-    padding: 1rem;
-    margin-bottom: 1rem;
-}
-
-/* Estilos para os cabeçalhos (h3) na seção de informações: define cor azul escura e espaçamento inferior */
-.information h3{
-    color: #004a7c;
-    margin-bottom: 0.5rem;
-}
-
-/* Estilos para a seção de informações: define espaçamento, largura máxima e centralização */
-.information{
-    padding: 2rem;
-    max-width: 1050px;
-    margin: auto;
+/* Estilos para parágrafos: define margem para espaçamento entre parágrafos */
+p {
+    margin: 1rem; /* Reduz o espaço entre os parágrafos */
 }

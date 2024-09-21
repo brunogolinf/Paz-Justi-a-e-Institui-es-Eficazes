@@ -1,11 +1,14 @@
 /*Começo Padrão para Todos */
 
+/* Reseta as margens e preenchimentos de todos os elementos e define o box-sizing 
+como 'border-box' para melhor controle de layout */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilos gerais para o corpo da página: define a fonte, cor de fundo, cor do texto e espaçamento entre linhas */
 body {
     font-family: 'Verdana', sans-serif;
     background-color: #fafafa;
@@ -13,39 +16,49 @@ body {
     line-height: 1.6;
 }
 
+/* Estilos do cabeçalho: cor de fundo azul escuro, cor do texto branco e espaçamento interno de 1rem */
 header {
     background-color: #004a7c;
     padding: 1rem;
     color: white;
 }
 
+/* Contêiner que agrupa o logo e a navegação: usa flexbox 
+para distribuir os itens horizontalmente e alinhar verticalmente */
 .logo-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+
+/* Estilos do logotipo: define o tamanho fixo */
 .logo {
     width: 100px;
     height: 75px;
 }
 
+/* Estilos para a lista de navegação: remove os marcadores de lista e alinha os 
+itens horizontalmente com espaçamento */
 nav ul {
     list-style: none;
     display: flex;
     gap: 1.5rem;
 }
 
+/* Estilos para os links da navegação: cor branca, texto sem sublinhado e negrito */
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
+/* Adiciona um sublinhado ao passar o mouse sobre os links da navegação */
 nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Estilos da seção de introdução: cor de fundo azul escuro, texto branco e centralizado, com espaçamento interno */
 .intro {
     background-color: #004a7c;
     color: white;
@@ -53,10 +66,12 @@ nav ul li a:hover {
     padding: 2rem 0;
 }
 
+/* Estilos para o título principal na introdução: tamanho de fonte definido para 2rem */
 .intro h1 {
     font-size: 2rem;
 }
 
+/* Estilos do rodapé: cor de fundo azul escuro, texto branco, espaçamento interno e alinhamento central */
 footer {
     background-color: #004a7c;
     color: white;
@@ -64,52 +79,61 @@ footer {
     text-align: center;
 }
 
+/* Estilos para os links no rodapé: cor branca e sem sublinhado */
 footer a {
     color: white;
     text-decoration: none;
 }
 
+/* Adiciona sublinhado ao passar o mouse sobre os links do rodapé */
 footer a:hover {
     text-decoration: underline;
 }
 
 /*Fim Padrão para Todos */
 
+/* Define o espaçamento interno, largura máxima e centraliza o conteúdo na página */
 .motivacoes, .news {
     padding: 2rem;
     max-width: 1200px;
     margin: auto;
 }
 
+ /* Estiliza os títulos das seções com cor e espaçamento inferior */
 .motivacoes h2, .news h2{
     color: #004a7c;
     margin-bottom: 1rem;
 }
 
+/* Centraliza o título da seção "motivacoes" */
 .motivacoes {
     padding: 2rem;
     max-width: 1200px;
     margin: auto;
 }
 
+/* Define um layout flexível para alinhar o texto e a imagem na seção "motivacoes" */
 .motivacoes h2 {
     color: #004a7c;
     margin-bottom: 1rem;
     text-align: center; /* Centraliza o título */
 }
 
+/* Centraliza e ajusta o tamanho do conteúdo textual da seção "motivacoes" */
 .motivacoes-content {
     display: flex;
     
     align-items: center; /* Alinhamento vertical */
 }
 
+/* Define tamanho fixo para a lista e alinha o texto à esquerda */
 .texto-motivacoes {
     flex: 1;
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
 }
 
+ /* Define o espaçamento entre os itens da lista */
 .texto-motivacoes ul {
  
     width: 300px; /* Define a largura fixa */
@@ -119,21 +143,26 @@ footer a:hover {
     
 }
 
+/* Centraliza a imagem dentro da seção "motivacoes" */
 .texto-motivacoes ul li {
     margin-bottom: 1rem; /* Espaçamento entre os itens da lista */
 }
 
+/* Garante que a imagem seja responsiva e mantenha suas proporções */
 .imagem-motivacoes {
     flex: 1;
     display: flex;
     justify-content: center;
 }
 
+ /* Garante que a imagem seja responsiva e mantenha suas proporções */
 .imagem-motivacoes img {
     max-width: 100%;
     height: auto;
 }
 
+ /* Define um layout flexível para os artigos de notícias, 
+ permitindo que eles se organizem e quebrem linha conforme necessário */
 .news {
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
@@ -144,6 +173,8 @@ footer a:hover {
     text-align: center;
 }
 
+/* Garante que o título da seção "news" ocupe toda a largura disponível, 
+tenha espaçamento adequado abaixo, e seja centralizado horizontalmente com uma cor específica */
 .news h2 {
     flex-basis: 100%; /* Garante que o título ocupe toda a largura */
     margin-bottom: 2rem; /* Espaço entre o título e as caixas */
@@ -151,6 +182,7 @@ footer a:hover {
     text-align: center; /* Centraliza o texto do título */
 }
 
+/* Estiliza cada artigo com cor de fundo, borda, sombra, e define um tamanho fixo para as caixas */
 .news article {
     background-color: #e0e0e0;
     padding: 1rem;
