@@ -64,6 +64,7 @@ nav ul li a:hover {
     color: white;
     text-align: center;
     padding: 2rem 0;
+    margin-bottom: 40px;
 }
 
 /* Estilos para o título principal na introdução: tamanho de fonte definido para 2rem */

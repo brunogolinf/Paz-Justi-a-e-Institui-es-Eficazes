@@ -122,7 +122,6 @@ footer a:hover {
 /* Centraliza e ajusta o tamanho do conteúdo textual da seção "motivacoes" */
 .motivacoes-content {
     display: flex;
-    
     align-items: center; /* Alinhamento vertical */
 }
 
@@ -186,8 +185,8 @@ tenha espaçamento adequado abaixo, e seja centralizado horizontalmente com uma 
 .news article {
     background-color: #e0e0e0;
     padding: 1rem;
-    width: 300px; /* Largura fixa para manter formato quadrado */
-    height: 400px; /* Altura fixa para manter formato quadrado */
+    width: 500px; /* Largura fixa para manter formato quadrado */
+    height: 250px; /* Altura fixa para manter formato quadrado */
     display: flex;
     align-items: center;
     border: 2px solid #666; /* Borda das caixas */

@@ -64,6 +64,7 @@ nav ul li a:hover {
     color: white;
     text-align: center;
     padding: 2rem 0;
+    margin-bottom: 50px;
 }
 
 /* Estilos para o título principal na introdução: tamanho de fonte definido para 2rem */
@@ -94,7 +95,6 @@ footer a:hover {
 
 /* Estilos para a seção de visão geral: define largura máxima e centralização */
 .overview {
-    
     max-width: 1000px;
     margin: auto;
 }
@@ -112,6 +112,10 @@ article {
 }
 
 /* Estilos para parágrafos: define margem para espaçamento entre parágrafos */
-p {
+.overview p {
     margin: 1rem; /* Reduz o espaço entre os parágrafos */
+}
+
+footer{
+    margin-top: 50px;
 }

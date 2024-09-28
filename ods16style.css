@@ -142,3 +142,8 @@ footer a:hover {
     max-width: 1050px;
     margin: auto;
 }
+
+a{
+    text-decoration: none;
+    color:#004a7c;
+}
