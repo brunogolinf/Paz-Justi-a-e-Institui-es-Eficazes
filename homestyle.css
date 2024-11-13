@@ -20,7 +20,54 @@ body {
 header {
     background-color: #004a7c;
     padding: 1rem;
+}
+
+/* Contêiner que agrupa o logo e a navegação: usa flexbox 
+para distribuir os itens horizontalmente e alinhar verticalmente */
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem; 
+}
+
+/* Estilização dos links do menu */
+nav ul li a {
     color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efeito de transformação e sublinhado no hover */
+nav ul li a:hover {
+    color: #a8e0ff; 
+    transform: scale(1.1); 
+}
+
+/* Sublinhado animado no hover */
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px; 
+    width: 100%;
+    height: 2px;
+    background-color: #a8e0ff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+/* Animação da linha ao passar o mouse */
+nav ul li a:hover::after {
+    transform: scaleX(1);
 }
 
 /* Contêiner que agrupa o logo e a navegação: usa flexbox 
@@ -46,17 +93,7 @@ nav ul {
     gap: 1.5rem;
 }
 
-/* Estilos para os links da navegação: cor branca, texto sem sublinhado e negrito */
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
 
-/* Adiciona um sublinhado ao passar o mouse sobre os links da navegação */
-nav ul li a:hover {
-    text-decoration: underline;
-}
 
 /* Estilos da seção de introdução: cor de fundo azul escuro, texto branco e centralizado, com espaçamento interno */
 .intro {
@@ -127,7 +164,7 @@ espaçamento interno e espaçamento inferior entre os artigos */
 
 /* Estilos para os botões: define bordas arredondadas, largura e altura fixas, 
 cor de fundo azul escuro, texto branco e negrito */
-button{
+button {
     border-radius: 10px;
     width: 200px;
     height: 50px;
@@ -135,12 +172,26 @@ button{
     color: white;
     font-weight: bold;
     text-decoration: none;
+    border: none; /* Remove a borda padrão */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adiciona sombra para dar profundidade */
+    cursor: pointer; /* Altera o cursor para indicar que é clicável */
+    transition: background-color 0.3s, transform 0.2s; /* Adiciona transição suave */
+}
+
+button:hover {
+    background-color: #006bb3; /* Escurece o botão no hover */
+    transform: translateY(-2px); /* Move o botão levemente para cima no hover */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); /* Aumenta a sombra para destacar o botão */
+}
+
+button:active {
+    transform: translateY(2px); /* Move o botão para baixo no clique */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Reduz a sombra para simular um efeito de clique */
 }
 
 /* Estilos para os links dentro dos botões: remove a sublinhação e herda a cor do botão */
-a{
+span{
     text-decoration: none;
     color: inherit;
 }
-
 

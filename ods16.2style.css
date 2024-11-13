@@ -20,7 +20,6 @@ body {
 header {
     background-color: #004a7c;
     padding: 1rem;
-    color: white;
 }
 
 /* Contêiner que agrupa o logo e a navegação: usa flexbox 
@@ -31,31 +30,58 @@ para distribuir os itens horizontalmente e alinhar verticalmente */
     align-items: center;
 }
 
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem; 
+}
+
+/* Estilização dos links do menu */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efeito de transformação e sublinhado no hover */
+nav ul li a:hover {
+    color: #a8e0ff; 
+    transform: scale(1.1); 
+}
+
+/* Sublinhado animado no hover */
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px; 
+    width: 100%;
+    height: 2px;
+    background-color: #a8e0ff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+/* Animação da linha ao passar o mouse */
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+/* Contêiner que agrupa o logo e a navegação: usa flexbox 
+para distribuir os itens horizontalmente e alinhar verticalmente */
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /* Estilos do logotipo: define o tamanho fixo */
 .logo {
     width: 100px;
     height: 75px;
-}
-
-/* Estilos para a lista de navegação: remove os marcadores de lista e alinha os 
-itens horizontalmente com espaçamento */
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-}
-
-/* Estilos para os links da navegação: cor branca, texto sem sublinhado e negrito */
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* Adiciona um sublinhado ao passar o mouse sobre os links da navegação */
-nav ul li a:hover {
-    text-decoration: underline;
 }
 
 /* Estilos da seção de introdução: cor de fundo azul escuro, texto branco e centralizado, com espaçamento interno */

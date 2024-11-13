@@ -20,7 +20,54 @@ body {
 header {
     background-color: #004a7c;
     padding: 1rem;
+}
+
+/* Contêiner que agrupa o logo e a navegação: usa flexbox 
+para distribuir os itens horizontalmente e alinhar verticalmente */
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem; 
+}
+
+/* Estilização dos links do menu */
+nav ul li a {
     color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efeito de transformação e sublinhado no hover */
+nav ul li a:hover {
+    color: #a8e0ff; 
+    transform: scale(1.1); 
+}
+
+/* Sublinhado animado no hover */
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px; 
+    width: 100%;
+    height: 2px;
+    background-color: #a8e0ff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+/* Animação da linha ao passar o mouse */
+nav ul li a:hover::after {
+    transform: scaleX(1);
 }
 
 /* Contêiner que agrupa o logo e a navegação: usa flexbox 
@@ -36,26 +83,6 @@ para distribuir os itens horizontalmente e alinhar verticalmente */
 .logo {
     width: 100px;
     height: 75px;
-}
-
-/* Estilos para a lista de navegação: remove os marcadores de lista e alinha os 
-itens horizontalmente com espaçamento */
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-}
-
-/* Estilos para os links da navegação: cor branca, texto sem sublinhado e negrito */
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* Adiciona um sublinhado ao passar o mouse sobre os links da navegação */
-nav ul li a:hover {
-    text-decoration: underline;
 }
 
 /* Estilos da seção de introdução: cor de fundo azul escuro, texto branco e centralizado, com espaçamento interno */
@@ -91,6 +118,51 @@ footer a:hover {
 }
 
 /*Fim Padrão para Todos */
+
+/* Estilos para as seções about-onu, news e ods-banner: 
+define um espaçamento interno centralizando o conteúdo */
+.about-onu, .news, .ods-banner {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Estilos para os títulos (h2) dessas seções: cor azul escuro e espaçamento abaixo do título */
+.about-onu h2, .news h2, .ods-banner h2 {
+    color: #004a7c;
+    margin-bottom: 1rem;
+}
+
+/* Estilos específicos para a seção ods-banner: centraliza o texto */
+.ods-banner {
+    text-align: center;
+}
+
+/* Estilos para os artigos dentro da seção news: cor de fundo cinza claro, 
+espaçamento interno e espaçamento inferior entre os artigos */
+.news article {
+    background-color: #e0e0e0;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Estilos para os títulos (h3) dentro dos artigos na seção news: cor azul escuro e um espaçamento inferior */
+.news article h3 {
+    color: #004a7c;
+    margin-bottom: 0.5rem;
+}
+
+/* Estilos para os botões: define bordas arredondadas, largura e altura fixas, 
+cor de fundo azul escuro, texto branco e negrito */
+button{
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    background-color: #004a7c;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
 
 /* Estilos para a caixa de links: define borda azul, espaçamento interno, margem superior e fundo cinza claro */
 .link-box {
